@@ -1,0 +1,144 @@
+@import "tailwindcss";
+
+/* Adobe XD Design Tokens for Tailwind v4 */
+@theme {
+  /* Colors - these will be available as utilities like bg-active, text-success, etc. */
+  --color-active: #01f0d0;
+  --color-active-light: #d8fcf7;
+  --color-success: #0bd984;
+  --color-text-primary: #072635;
+  --color-text-secondary: #0c3d5d;
+  --color-gray: #707070;
+  --color-gray-light: #f6f6f6;
+  --color-gray-lighter: #ededed;
+  --color-gray-dark: #878787;
+  --color-blue: #006aac;
+  --color-blue-light: #007bc7;
+  --color-accent-orange: #ff6200;
+
+  /* Font Family */
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+
+  /* Custom spacing if needed */
+  --spacing-4: 1rem;
+  --spacing-6: 1.5rem;
+}
+
+/* Base Styles */
+body {
+  font-family: var(--font-sans);
+  color: var(--color-text-primary);
+  background: var(--color-gray-light);
+}
+
+/* Adobe XD Character Styles - Simple utility classes */
+.card-title {
+  font-family: var(--font-sans);
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: 0;
+  color: var(--color-text-primary);
+}
+
+.inner-card-title {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: var(--color-text-primary);
+  text-transform: capitalize;
+}
+
+.body-emphasized {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0;
+  color: var(--color-text-primary);
+}
+
+.body-secondary {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0;
+  color: var(--color-gray);
+}
+
+.body-regular {
+  font-family: var(--font-sans);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0;
+  color: var(--color-text-primary);
+}
+
+/* Simple component styles without @apply */
+.card {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+}
+
+.btn-primary {
+  background-color: var(--color-active);
+  color: var(--color-text-primary);
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-weight: 700;
+  transition: opacity 0.2s;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.btn-secondary {
+  background-color: var(--color-gray-light);
+  color: var(--color-gray-dark);
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  font-weight: 700;
+  transition: background-color 0.2s;
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-gray-lighter);
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--color-gray-lighter);
+  border-radius: 0.5rem;
+  outline: none;
+}
+
+.input-field:focus {
+  border-color: var(--color-active);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.badge-success {
+  background-color: var(--color-success);
+  color: white;
+}
+
+.badge-active {
+  background-color: var(--color-active);
+  color: var(--color-text-primary);
+}
