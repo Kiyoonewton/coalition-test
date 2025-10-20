@@ -30,7 +30,7 @@ const Navbar: React.FC = () => {
 
   return (
     <div className="sticky top-0 z-50">
-      <div className="h-[10px] bg-white"></div>
+      <div className="h-[10px] bg-gray-light"></div>
       <nav className="bg-white border-b border-gray-200 shadow-sm rounded-[75px]">
         <div className="px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-18">

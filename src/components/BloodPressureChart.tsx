@@ -49,7 +49,7 @@ export default function BloodPressureChart({
 
   const chartData: ChartData = useMemo(() => {
     return {
-      labels: filteredData.map((data) => `${data.month}`),
+      labels: filteredData.map((data) => `${data.month} ${data.year}`),
       datasets: [
         {
           label: "Systolic",

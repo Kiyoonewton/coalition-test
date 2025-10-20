@@ -18,8 +18,8 @@ export default function PatientsList({
 
   return (
     <div
-      className="bg-white rounded-2xl h-[calc(100vh + 40px)] flex flex-col"
-      style={{ maxHeight: "calc(100vh + 40px)" }}
+      className="bg-white rounded-2xl h-[calc(100vh + 130px)] flex flex-col"
+      style={{ maxHeight: "calc(100vh + 130px)" }}
     >
       {/* Header */}
       <div className="p-5">
