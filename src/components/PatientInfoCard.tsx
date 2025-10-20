@@ -30,7 +30,7 @@ export default function PatientInfoCard({ patient }: PatientInfoCardProps) {
   };
 
   return (
-    <div className="bg-white rounded-2xl p-6 max-w-md mx-auto mb-[30px]">
+    <div className="bg-white rounded-2xl p-6 max-w-md mx-auto mb-[20px]">
       <div className="flex justify-center mb-6">
         <div className="relative">
           <Image

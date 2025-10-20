@@ -31,13 +31,13 @@ export default function LabResults({
   };
 
   return (
-    <div className="bg-white rounded-2xl p-6 h-[280px] w-full">
+    <div className="bg-white rounded-2xl px-6 pt-6 pb-2 h-[290px] w-full">
       <h2 className="card-title mb-4">Lab Results</h2>
 
       <div
         className="space-y-0 overflow-y-auto"
         style={{
-          maxHeight: "185px",
+          maxHeight: "195px",
           scrollbarWidth: "thin",
           scrollbarColor: "#072635 #F6F6F6",
         }}
@@ -45,11 +45,7 @@ export default function LabResults({
         {results.map((result, index) => (
           <div
             key={result.id}
-            className="flex items-center justify-between hover:bg-[#F6F6F6] transition-colors px-[11px] cursor-pointer"
-            style={{
-              borderBottom:
-                index < results.length - 1 ? "1px solid #F6F6F6" : "none",
-            }}
+            className="flex items-center justify-between hover:bg-[#F6F6F6] transition-colors px-[11px] cursor-pointer h-[40px] mb-1"
           >
             <span className="body-regular" style={{ color: "#072635" }}>
               {result.name}
